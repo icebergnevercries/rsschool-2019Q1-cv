@@ -58,3 +58,9 @@ I've been looking for a programming area, that would really interest me for a lo
 * Development of the site dedicated to the foundation and plinth.
 * Development of a web resource that regulates the production of parts through technological processes.
 * Development of online store for the sale of equipment.
+
+### Education
+* Graduated from BNTU, faculty FITR in 2018
+* Codeacademy
+* Studied online tutorial learn.javascript.ru
+* Seminars on Zhukova(2018)
