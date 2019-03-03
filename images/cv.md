@@ -64,3 +64,5 @@ I've been looking for a programming area, that would really interest me for a lo
 * Codeacademy
 * Studied online tutorial learn.javascript.ru
 * Seminars on Zhukova(2018)
+### English level
+I go to tutor every week.
