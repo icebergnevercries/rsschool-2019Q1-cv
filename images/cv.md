@@ -52,4 +52,9 @@ I've been looking for a programming area, that would really interest me for a lo
     let sum = arr.reduce(function(pV, cV){ return pV += cV; });
     return arr.map(function(curr){return sum - curr;});
     }
-    
+
+### Experience
+* Information and calculation portal for solving matrix equations.
+* Development of the site dedicated to the foundation and plinth.
+* Development of a web resource that regulates the production of parts through technological processes.
+* Development of online store for the sale of equipment.
