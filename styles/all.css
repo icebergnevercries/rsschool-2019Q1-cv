@@ -55,3 +55,100 @@ header {
 .menu ul li:hover a {
     color: #dd6508;
 }
+
+main {
+    position: relative;  
+}
+
+.grid {
+    display: grid;   
+    min-height: 300px;
+    grid-template-columns: 30% 70%;
+}
+
+main .grid:first-child {
+    padding: 40px 0 0 0;
+}
+
+.avatar-content {   
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0 0 0;
+    background-color: #f0f0f0;    
+}
+
+.contacts-content {
+    display: grid;
+    grid-template: 3fr 1fr / repeat(4, 1fr);
+    background-color: #ffffff;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border: 1px sold #000000;
+    border-radius: 100%;
+}
+
+.name-content {
+    grid-area: 1 / 1 / 1 / span 4;    
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.location-content {
+    grid-area: 2 / 1 / 2/ span 1;
+}
+
+.phone-content {
+    grid-area: 2 / 2 / 2/ span 1;
+}
+
+.github-content {
+    grid-area: 2 / 3 / 2/ span 1;
+}
+
+.email-content {
+    grid-area: 2 / 4 / 2/ span 1;
+}
+
+p.first-name {
+    padding: 40px 0 0 30px;
+    font-size: 2em;
+    line-height: 0.9em;
+    color: #9f9c99;
+}
+
+p.last-name {    
+    padding: 0 0 0 30px;
+    font-size: 3em;
+    line-height: 0.9em;
+    color:#f8a816;
+}
+
+p.brief-skills {
+    padding: 10px 0 0 30px;
+    font-size: 1.5em;
+    line-height: 1em;
+    color:#c7c7c7;
+}
+
+.personal-data {
+    padding: 0 0 0 10px;
+}
+
+.personal-data h3 {
+    padding: 5px 0;
+}
+
+.personal-data p {
+    color: #9f9c99;
+}
+
+.personal-data a {
+    text-decoration: none;
+    color: #f8a816;    
+}
+
+.personal-data a:hover {
+    color: #dd6508;
+}
