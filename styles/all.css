@@ -4,3 +4,54 @@
     font-weight: normal;
     font-style: normal;
     }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+    font-family: "Lato", "Arial", sans-serif;
+    background-color: #fafafa;    
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 1024px;
+}
+
+.menu {       
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(230, 230, 230, 0.7);
+    border: 1px solid #c7c7c7; 
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #f8a816;   
+   }    
+
+.menu ul li:hover {
+    background-color: #fafafa;
+}
+
+.menu ul li:hover a {
+    color: #dd6508;
+}
