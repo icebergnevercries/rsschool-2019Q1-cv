@@ -279,3 +279,11 @@ ul.education li a {
 ul.education li:hover a {
     color: #dd6508;
 }
+
+.eng-level {
+    padding: 0 0 0 40px;
+}
+
+.eng-level p {
+    color: #9f9c99;
+}
