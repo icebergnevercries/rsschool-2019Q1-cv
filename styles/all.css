@@ -152,3 +152,73 @@ p.brief-skills {
 .personal-data a:hover {
     color: #dd6508;
 }
+
+.left {
+    padding: 40px 0 0 40px;
+}
+
+.left-content-1 {
+    background-color: #f0f0f0;
+}
+
+.left-content-2 {
+    background-color: #f8f7f7;
+}
+
+.right {
+    padding: 40px 0 0 0;
+}
+
+.right-content-1 {
+    background-color: #ffffff;
+}
+
+.right-content-2 {
+    background-color: #fcfcfc;
+}
+
+.left h2 {
+    line-height: 2em;
+    color: #f8a816;
+}
+
+.left p {
+    color: #9f9c99;
+}
+
+ul.goals {
+    padding: 0 0 10px 40px;
+}
+
+ul.goals li {
+    color: #f8a816;
+}
+
+ul.goals li:first-child {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+ul.goals li:first-child span {
+    color: #444141;
+    font-weight: 700;
+}
+
+ul.goals li span {
+    color: #8C8282;
+}
+
+.wishes p {
+    padding: 0 20px 0 20px;
+}
+
+.wishes p {
+    color: #8C8282;
+}
+
+.wishes p:first-child {
+    color: #444141;
+    font-weight: 700;
+    line-height: 2em;
+    padding: 0 20px 0 40px;
+}
