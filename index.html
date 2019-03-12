@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Denis: Resume</title>
+    <link rel="stylesheet" href="styles/all.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html#contacts">CONTACTS</a></li>
+                <li><a href="index.html#summary">SUMMARY</a></li>
+                <li><a href="index.html#skills">SKILLS</a></li>
+                <li><a href="index.html#code-examples">CODE EXAMPLES</a></li>
+                <li><a href="index.html#experience">EXPERIENCE</a></li>
+                <li><a href="index.html#education">EDUCATION</a></li>
+                <li><a href="index.html#english-level">ENGLISH LEVEL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid" id="contacts">
+            <div class="avatar-content">
+                <img class="avatar" src="images/avatar.png" alt="Denis Losik" width="200" height="200">
+            </div>
+            <div class="contacts-content">
+                <div class="name-content">
+                    <p class="first-name">Denis</p>
+                    <p class="last-name">Losik</p>
+                    <p class="brief-skills">Junior Web Developer</p>
+                </div>
+                <div class="location-content personal-data">
+                    <h3>Location</h3>
+                    <p>Minsk, Belarus</p>
+                </div>
+                <div class="phone-content personal-data">
+                    <h3>Phone</h3>
+                    <p>+375333513734</p>
+                </div>
+                <div class="github-content personal-data">
+                    <h3>Github</h3>
+                    <a href="https://github.com/icebergnevercries" target="_blank">icebergnevercries</a>
+                </div>
+                <div class="email-content personal-data">
+                    <h3>Email</h3>
+                    <a href="mailto:denislosik@mail.ru" target="_blank">denislosik@mail.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid" id="summary">
+            <div class="left left-content-2">
+                <h2>Summary</h2>
+                <p>Goals and wishes</p>
+            </div>
+            <div class="right right-content-2">
+                <ul class="goals">
+                    <li><span>My goals:</span></li>
+                    <li><span>The desire to improve their skills in the area of web development.</span></li>
+                    <li><span>Job search with a communicative team in the area of web development.</span></li>
+                    <li><span>The desire to be the best in the area of interest</span></li>
+                </ul>
+                <div class="wishes">
+                    <p>Why i decided to become a web developer:</p>
+                    <p>I've been looking for a programming area, that would really interest me for a long time. 
+                         Only when I helped develop a site to one of my friends. I realized that I want to continue to do this. 
+                         From that moment on, I am looking for development opportunities in the area of web-development.
+                        I believe that The Rolling Scopes School courses are a great opportunity to become a high-class developer and I will definitely take advantage of it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid" id="skills">
+            <div class="left left-content-1">
+                <h2>Skills</h2>
+                <p>Progress bars</p>
+            </div>
+            <div class="right right-content-1">
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p>HTML/CSS</p>
+                        <progress max="100" value="75"></progress>
+                    </div>
+                    <div class="progress-bar">
+                        <p>JavaScript</p>
+                        <progress max="100" value="55"></progress>
+                    </div>
+                    <div class="progress-bar">
+                        <p>C/C++/C#</p>
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="progress-bar">
+                        <p>ASP.NET</p>
+                        <progress max="100" value="40"></progress>
+                    </div>
+                    <div class="progress-bar">
+                        <p>MySQL</p>
+                        <progress max="100" value="40"></progress>
+                    </div>
+                </div>                
+            </div>
+        </div>   
+        <div class="grid" id="code-examples">
+            <div class="left left-content-2">
+                <h2>Code Exampless</h2>
+                <p>My code examples</p>
+            </div>
+            <div class="right right-content-2">
+                <div class="examples">
+                    <pre>
+                    module.exports = function make(...s) {
+                    let str = s.length > 1 ? s.join(',') + ',' : `${s}` + ',';
+                    const f = (...b) => {
+                        if(typeof(b[0]) === 'function')
+                        {
+                            str = str.substring(0, str.length - 1);
+                            return str.split(',').reduce(function(cV, pV){return b[0](+cV, +pV);});
+                        }
+                        else{            
+                            str += b.length > 1 ? b.join(',') + ',' : b + ',';
+                            return f;
+                        }        
+                    }
+                    f.toString = function() {
+                        return str;
+                    };
+                    return f;
+                    } 
+                    
+                    module.exports = function recursion(tree) {
+                    return (recurs = (tree, index, arr) => {
+                        for(var obj in tree){
+                            if(typeof(tree[obj]) !== 'object'){
+                                if (typeof arr[index] === 'undefined') arr[index] = [];
+                                arr[index].push(tree[obj]);
+                            }
+                            else{
+                                recurs(tree[obj], index + 1, arr);
+                            } 
+                        }    
+                        return arr;
+                    })(tree, 0, [])
+                    };
+                        
+                    module.exports = function sumOfOther(arr) {
+                    let sum = arr.reduce(function(pV, cV){ return pV += cV; });
+                    return arr.map(function(curr){return sum - curr;});
+                    }
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <div class="grid" id="experience">
+            <div class="left left-content-1">
+                <h2>Experience</h2>
+                <p>My web-development experience</p>
+            </div>
+            <div class="right right-content-1">
+                <ul class="goals">
+                    <li><span>Web-development experience:</span></li>
+                    <li><span>Information and calculation portal for solving matrix equations.</span></li>
+                    <li><span>Development of the site dedicated to the foundation and plinth.</span></li>
+                    <li><span>Development of a web resource that regulates the production of parts through technological processes.</span></li>
+                    <li><span>Development of online store for the sale of equipment.</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid" id="education">
+            <div class="left left-content-2">
+                <h2>Education</h2>
+                <p>The stages of my training in the web development</p>
+            </div>
+            <div class="right right-content-2">
+                <ul class="education">
+                    <li>Graduated from BNTU, faculty FITR in 2018</li>
+                    <li><a href="https://www.codecademy.com/icebergnevercries6542889979" target="_blank">Codeacademy</a></li>
+                    <li><a href="https://learn.javascript.ru/" target="_blank">Studied online tutorial learn.javascript.ru</a></li>
+                    <li>Seminars on Zhukova(2018)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid" id="english-level">
+            <div class="left left-content-1">
+                <h2>English level</h2>
+                <p>General information about my learning English</p>
+            </div>
+            <div class="right right-content-1">
+                <div class="eng-level">
+                    <p>I watch serials in English and sometimes translate books. Also I go to tutor every week.</p>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2018 Denis Losik</p>        
+        <div class="grid-footer">
+            <p>How to contact me:</p>
+            <a href="mailto:denislosik@mail.ru" target="_blank">denislosik@mail.ru</a>
+            <a href="https://web.telegram.org/#/im?p=@denis_ice" target="_blank">telegram</a>
+        </div>
+    </footer> 
+</body>
